@@ -24,14 +24,17 @@ namespace SessionConsole
                     switch (input)
                     {
                         case "focus":
+                        case "f":
                             session.SetIsFocussed(true);
                             break;
 
                         case "unfocus":
+                        case "uf":
                             session.SetIsFocussed(false);
                             break;
 
                         case "standup":
+                        case "s":
                             session.Standup();
                             break;
 
@@ -46,7 +49,7 @@ namespace SessionConsole
 
         static void PrintMenu()
         {
-            Console.WriteLine("Options are: \"focus\", \"unfocus\", \"standup\" and \"q\"");
+            Console.WriteLine("Options are: \"focus\" (f), \"unfocus\" (uf), \"standup\" (s) and \"q\"");
             Console.WriteLine();
         }
     }
