@@ -83,7 +83,7 @@ namespace StateHandler
         {
             if (physicalPresence == PhysicalPresence.AFK)
             {
-                return Colors.Off;
+                return Colors.Yellow;
             }
 
             switch (focusState)
